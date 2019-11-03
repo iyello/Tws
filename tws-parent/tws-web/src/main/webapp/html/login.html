@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>淘物社登录页</title>
+    <link type="text/css" rel="stylesheet" href="../css/reset.css" />
+    <link type="text/css" rel="stylesheet" href="../css/login.css" />
+</head>
+
+<body>
+    <header>
+        <img src="../img/homePage/logo.jpg" />
+        <h2>欢迎登录</h2>
+        <p>尚未注册？<a href="register.html">去注册></a></p>
+    </header>
+
+    <div class="form">
+        <div><label for="id">账号</label><input type="text" placeholder="请输入您的账号" id="id" /></div>
+        <div><label for="password">密码</label><input type="password" placeholder="请输入您的密码" id="password" /></div>
+        <div>
+            <input type="text" placeholder="请输入验证码" id="code" />
+            <canvas id="identify"></canvas>
+            <img src="../img/homePage/refresh.png" alt="刷新验证码" id="changeCode"/>
+        </div>
+        <button>登录</button>
+    </div>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/loginES5.js"></script>
+</body>
+
+</html>

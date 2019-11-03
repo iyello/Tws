@@ -1,0 +1,194 @@
+﻿body,html{
+    width: 100%;
+    height: 100%;
+    font-size: 0.625rem;
+    min-width: 1200px;
+}
+#user{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-size: 1.3rem;
+}
+header{
+    width: 1200px;
+    height: 130px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+header>img{
+    width: 180px;
+    height: 100px;
+    margin-top:20px;
+    margin-left: 30px;
+    vertical-align: -140%;
+}
+header>.top_search{
+    display: inline-block;
+    width: 730px;
+    height: 30px;
+    margin-left: 110px;
+    margin-top: 60px;
+    border: 2px solid #91C8F0;
+    text-align: center;
+}
+header>.top_search>input{
+    width: 650px;
+    height: 30px;
+    text-indent: 2em;
+    font-size: 1.6rem;
+}
+header>.top_search>aside{
+    float: right;
+    width: 80px;
+    height: 30px;
+    line-height: 30px; 
+    background-color: #91C8F0;
+    font-size: 3em;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer; 
+}
+
+.nav-tabs>li>a{
+    width: 105px;
+    font-weight: bold;
+    font-size:1.8rem;
+    color:black;
+}
+.nav-tabs>li.active>a{
+    color:black!important;
+}
+.navigation{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 2rem;
+}
+.navigation>li{
+    width: 100px;
+    margin-left: 90px;
+    text-align: center;
+}
+.choose{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    background:rgb(223, 242, 255);
+}
+.choose>p{
+    display:inline-block;
+    padding-left: 37px;
+    font-size: 1.5rem;
+}
+.price,.place{
+    display: inline-block;
+    margin: 22px 50px;
+    font-size: 1.5rem;
+}
+.price{
+    margin-left:70px;
+}
+.price span,.place span{
+    font-size: 1.5rem;
+}
+.price button,.place button{ 
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 30px;
+    border-radius: 5px;
+    background-color: white;
+}
+.place{
+    float:right;
+}
+.rotation{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.item>img{
+    width: 100%;
+    height: 500px!important;
+    cursor: pointer;
+}
+.buy-one-buy,.recommend{
+    width: 1202px;/*之后要改回去1200*/
+    /* border: 1px solid red; */
+    margin: 0 auto;
+}
+.buy-one-buy>h3,.recommend>h3{
+    font-size: 1.6rem;
+    text-align: center;
+}
+.buy-one-buy ul,.recommend ul{
+   font-size: 0;
+}
+.buy-one-buy li{
+    display: inline-block;
+    width: 288px;  
+    height: 130px;
+    margin-right: 16px;
+}
+.buy-one-buy img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.buy-one-buy li:last-child{
+    margin-right: 0;
+}
+.recommend li{
+    display: inline-block;
+    width: 288px;   
+    height: 340px;
+    padding: 10px;
+    margin-right: 16px;
+    background-color: rgb(180, 219, 247);
+}
+.recommend li:nth-child(4n){
+    margin-right: 0;
+}
+.commodity{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+}
+.commodity>img{
+    width: 100%;
+    height: 245px;
+    cursor: pointer;
+}
+.commodity>h3{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+}
+
+.commodity>s{
+    padding-left: 8px;
+    font-size: 1rem;
+    text-decoration: line-through;
+}
+.commodity>b{
+    color: red;
+    font-size: 1.4rem;
+}
+
+.dn{
+    display: none!important;
+}
+.db{
+    display:block!important;
+}
+.dib{
+    display: inline-block!important;
+}
+
+

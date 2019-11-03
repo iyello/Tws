@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>商品详情</title>
+	<link rel="stylesheet" type="text/css" href="../css/ItemsDetails.css">
+	<link rel="stylesheet" type="text/css" href="../css/sidebar.css">
+
+</head>
+
+<body>
+<header>
+        <img src="../image/logo.jpg" />
+        <div class="top_search" style="box-sizing: content-box;">
+            <input type="text" placeholder="请输入你想要搜索的商品" />
+            <aside>搜索</aside>
+        </div>
+</header>
+ <div class="box">
+	 <div class="topBox">
+		<div class="showBox">
+			<div class="showTop">
+				<img  class="showPic" id="showPic" src="">
+			</div>
+			<div class="showButtom" id="showButtom">
+				<ul>
+					<li class="picIn">
+						<img src=""> 
+					</li>
+					<li>
+						<img src="">
+					</li>
+					<li>
+						<img src="">
+					</li>
+					<li>
+						<img src="">
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="contentBox">
+			<p class="title" id="title"></p>
+			<dl>
+				<dt>价&nbsp;&nbsp;&nbsp;&nbsp;格：</dt>
+				<div id="bfPriBox">
+					<dd>¥</dd>
+					<dd class="priceSty" id="beforePrice1"></dd>
+				</div>
+				<div id="afPriBox">
+					<dd>¥</dd>
+					<dd style="text-decoration: line-through;" id="beforePrice2"></dd>
+					<dd>¥</dd>
+					<dd class="priceSty" id="afterPrice"></dd>
+				</div>	
+			</dl>
+			<dl>
+				<dt>发货地：</dt>
+				<dd class="addressSty" id="address"></dd>
+			</dl>
+			<dl>
+				<dt>运&nbsp;&nbsp;&nbsp;&nbsp;费：</dt>
+				<dd class="">¥</dd>
+				<dd class="fareSty">0.00</dd>
+			</dl>
+			<form class="formSty" role="form">
+				<div class="selectBox">
+					<dl class="" style="margin:19px 0px;">
+						<dt class="selectDt" id="cDt1"></dt>
+						<dd>
+							<ul class="selectList" id="classify1">
+							</ul>
+						</dd>
+					</dl>
+					</br>
+					<dl class="">
+						<dt class="selectDt" id="cDt2"></dt>
+						<dd>
+							<ul class="selectList" id="classify2">
+							</ul>
+						</dd>	
+					</dl>
+					</br>
+					<dl class="">
+						<dt style="float:left;margin:4.5px 0px;">数&nbsp;&nbsp;&nbsp;&nbsp;量:&nbsp;</dt>
+						<dd>
+							<input type="text" value="1" id="num" class="numSty">
+							<div style="margin:0px -43px;">
+								<img class="numBtn" id="addBtn" src="../image/btn1.jpg" style="margin:0px 158px;">
+								<img class="numBtn" id="subBtn" src="../image/btn2.jpg" style="margin:4.5px 158px;">
+							</div>
+							
+						</dd>	
+					</dl>		
+				</div>
+				<input type="submit" id="buyIpt"  class="buyIpt" value="立即购买" />
+				<input type="submit" id="addIpt" class="addIpt" value="加入购物车" />
+			</form>
+		</div>
+		<div class="watchBox">
+			<div class="line"></div>
+			<div class="wTop">
+				<div class="row1"></div>
+				<span class="wTitleSty">看了又看</span>
+				<div class="row2"></div>
+			</div>
+			<div class="wPicBox" id="wPicBox">
+				<ul id="wPicBoxUl">
+				</ul>
+			</div>
+		</div>
+	 </div>
+	 <div class="tabareaBox" id="tabareaBox">
+		 <div id="tabarea">
+			 <ul>
+				 <li class="tabHover">商品详情</li>
+				 <li>商品评价</li>
+			 </ul>
+		 </div>
+		<div class="contentFirst contentIn" id="detail">
+			<ul>
+				<li>
+					<img src="">
+				</li>
+				<li>
+					<img src="">
+				</li>
+				<li>
+					<img src="">
+				</li>
+				<li>
+					<img src="">
+				</li>
+				<li>
+					<img src="">
+				</li>
+			</ul>
+		</div>
+		<div class="contentFirst" id="content">
+				<ul>
+					<li>
+						<div class="contentLeft">
+							<img  class="headSty" src="../image/head1.png">
+							<span>陈**海</span>
+						</div>
+						<div class="contentRight">
+							<div class="starBox">
+								<img  class="starSty" src="../image/star.png">
+								<img  class="starSty" src="../image/star.png">
+								<img  class="starSty" src="../image/star.png">
+								<img  class="starSty" src="../image/star.png">
+								<img  class="starSty" src="../image/star.png">
+							</div>
+							<p></p>
+							<span>2019-09-24 00:31:44</span>
+						</div>
+					</li>
+					<li>
+						<div class="contentLeft">
+							<img  class="headSty" src="../image/head1.png">
+							<span>陈**海</span>
+						</div>
+						<div class="contentRight">
+							<div class="starBox">
+								<img  class="starSty" src="../image/star.png">
+								<img  class="starSty" src="../image/star.png">
+								<img  class="starSty" src="../image/star.png">
+								<img  class="starSty" src="../image/star.png">
+								<img  class="starSty" src="../image/star.png">
+							</div>
+							<p></p>
+							<span>2019-09-26 01:13:40</span>
+						</div>
+					</li>
+					<li>
+						<div class="contentLeft">
+							<img  class="headSty" src="../image/head1.png">
+							<span>陈**海</span>
+						</div>
+						<div class="contentRight">
+							<div class="starBox">
+								<img  class="starSty" src="../image/star.png">
+								<img  class="starSty" src="../image/star.png">
+								<img  class="starSty" src="../image/star.png">
+								<img  class="starSty" src="../image/star.png">
+								<img  class="starSty" src="../image/star.png">
+							</div>
+							<p></p>
+							<span>2019-07-24 14:31:44</span>
+						</div>
+					</li>
+					<li>
+						<div class="contentLeft">
+							<img  class="headSty" src="../image/head1.png">
+							<span>陈**海</span>
+						</div>
+						<div class="contentRight">
+							<div class="starBox">
+								<img  class="starSty" src="../image/star.png">
+								<img  class="starSty" src="../image/star.png">
+								<img  class="starSty" src="../image/star.png">
+								<img  class="starSty" src="../image/star.png">
+								<img  class="starSty" src="../image/star.png">
+							</div>
+							<p></p>
+							<span>2019-05-24 00:31:54</span>
+						</div>
+					</li>
+					<li>
+						<div class="contentLeft">
+							<img  class="headSty" src="../image/head1.png">
+							<span>陈**海</span>
+						</div>
+						<div class="contentRight">
+							<div class="starBox">
+								<img  class="starSty" src="../image/star.png">
+								<img  class="starSty" src="../image/star.png">
+								<img  class="starSty" src="../image/star.png">
+								<img  class="starSty" src="../image/star.png">
+								<img  class="starSty" src="../image/star.png">
+							</div>
+							<p></p>
+							<span>2019-09-04 06:31:44</span>
+						</div>
+					</li>
+				</ul>
+		</div>
+	</div>	  
+ </div>
+ <!-- 侧边栏 -->
+ <div class="sidebar">
+	<!-- 侧边栏购物车 -->
+	<div class="cartBox" id="cartBox">
+		<div class="cartHead">
+			<input type='checkbox' class='cartAll' id='cartCheckAll'/>
+			<span>全选</span>
+			<img src='../image/dele.png'/>
+			<span id='cartDelete'>删除</span>
+		</div>
+		<ul class="sCartUl" id="sCartUl">         
+		</ul>
+		<div class="cartFoot">
+			<span style="margin-left:45px;">已选 </span>
+			<span id="cartSum">0</span>
+			<span> 件</span>
+			<span style="color:red;margin-left:105px;">¥</span>
+			<span style="color:red" id="cartTotal">200.00</span>
+			<button>结算</button>
+		</div>
+	</div>
+	<!-- 侧边栏历史浏览 -->
+	<div class="historyBox" id="historyBox">
+		<div class="historyHead">
+			<span class="historySpan">我看过的</span>
+			<span id="historyClean">清空</span>
+		</div>
+		<span id="emptyFont">空空如也...</span>
+		<ul class="sHistoryUl" id="sHistoryUl">
+		</ul>
+	</div>
+	<div class="sidebarLeft" id="sidebarLeft">
+		<img src="../image/history.png" id="historySty" class="sidebarIcon"/>
+		<div style="width:35px;height:1px;margin:0px auto;padding:0px;background-color:#D5D5D5;overflow:hidden;"></div>
+		<img src="../image/cart.png" id="cartSty" class="sidebarIcon"/>
+		<div style="width:35px;height:1px;margin:0px auto;padding:0px;background-color:#D5D5D5;overflow:hidden;"></div>
+		<img src="../image/order.png" id="bagSty" class="sidebarIcon"/>
+	</div>   
+</div>
+ <script type="text/javascript" src="../jq/jquery-validation-1.17.0/lib/jquery.js"></script>
+ <script type="text/javascript" src="../jq/jquery-validation-1.17.0/dist/jquery.validate.min.js"></script>
+ <script type="text/javascript" src="../jq/jquery-3.2.1.min.js"> </script>
+
+ <script type="text/javascript" src="../js/main.js"> </script>
+
+</body>
+</html>

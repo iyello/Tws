@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>淘物社首页</title>
+    <link type="text/css" rel="stylesheet" href="../css/reset.css" />
+    <!-- <link href="../css/bootstrap.min.css" rel="stylesheet"/> -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../css/topSearch.css" />
+
+</head>
+
+<body>
+    <!-- 用户名显示 -->
+    <p id="user"><span>社会</span>你好！欢迎来到淘物社！</p>
+    <!--首页搜索栏-->
+    <header>
+        <img src="../img/homePage/logo.jpg" />
+        <div class="top_search" style="box-sizing: content-box;">
+            <input type="text" placeholder="请输入你想要搜索的商品" />
+            <aside>搜索</aside>
+        </div>
+    </header>
+    <!--首页分类栏-->
+    <ul class="nav nav-tabs navigation">
+        <li class="active" style="margin-left: 300px;"><a href="#">首页</a></li>
+        <li><a href="#">生活家电</a></li>
+        <li><a href="#">衣物鞋饰</a></li>
+        <li><a href="#">食品生鲜</a></li>
+    </ul>
+    <!--筛选区域-->
+    <div class="choose dn">
+        <p>筛&nbsp;&nbsp;选</p>
+        <div class="price">
+            <span>价格：</span>
+            <button>100元以下</button>
+            <button>100元以上</button>
+        </div>
+        <div class="place">
+            <span>发货地：</span>
+            <button>广州</button>
+            <button>浙江</button>
+            <button>上海</button>
+        </div>
+    </div>
+    <!--首页轮播图-->
+    <div id="myCarousel" class="carousel slide rotation">
+        <!-- 轮播（Carousel）指标 -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- 轮播（Carousel）项目 -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="../img/homePage/rotation-2.png" alt="First slide">
+            </div>
+            <div class="item">
+                <img src="../img/homePage/rotation-1.jpg" alt="Second slide">
+            </div>
+            <div class="item">
+                <img src="../img/homePage/rotation-3.jpg" alt="Third slide">
+            </div>
+        </div>
+        <!-- 轮播（Carousel）导航 -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span _ngcontent-c3="" aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span _ngcontent-c3="" aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+    <!--淘一淘-->
+    <div class="buy-one-buy">
+        <h3>淘一淘</h3>
+        <ul>
+            <li><img src="../img/homePage/rotation-first.jpg" alt="First buy"></li>
+            <li><img src="../img/homePage/rotation-2.png" alt="Second buy"></li>
+            <li><img src="../img/homePage/rotation-1.jpg" alt="Third buy"></li>
+            <li><img src="../img/homePage/rotation-3.jpg" alt="Four slide"></li>
+        </ul>
+    </div>
+    <!--为你推荐-->
+    <div class="recommend">
+        <h3>为你推荐</h3>
+        <ul></ul>
+    </div>
+
+    <script src="../js/jquery.min.js"></script>
+    <!-- <script src="../js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/topSearchES5.js"></script>
+    <!-- <script src="../js/topSearch.js"></script> -->
+</body>
+
+</html>

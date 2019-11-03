@@ -1,0 +1,95 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    font-size: 0.625rem;
+    min-width: 1200px;
+}
+header{
+    width: 1200px;
+    height: 130px;
+    margin: 0 auto;
+    padding-top: 30px;
+    /* border: 1px solid red; */
+}
+header>img{
+    width: 180px;
+    height: 100px;
+    vertical-align: -90%;
+}
+header>h2{
+    display: inline-block;
+    margin-left:25px;
+    font-size: 3.5rem;
+    color: #91C8F0;
+}
+header>p{
+    float: right;
+    display: inline-block;
+    margin-top: 70px;
+    font-size: 1.6rem;
+}
+header a{
+    color:red;
+    cursor: pointer;
+}
+
+.form{
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    left: 50%;
+    top: 50%;
+    margin-top: -115px;
+    margin-left: -200px;
+    border: 1px solid #91C8F0;
+    border-radius: 5px;
+    background-color: rgb(205, 230, 248);
+}
+.form>div{
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 35px;
+    border:1px solid rgb(205, 230, 248);
+}
+.form label{
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    border-right: 1px solid rgb(205, 230, 248);
+    text-align: center;
+    font-size: 14px;
+    background-color: white;
+    vertical-align: top;
+}
+.form input{
+    width: 249px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    text-indent: 2em;
+}
+#code{
+    width: 135px;
+    vertical-align: top;
+}
+#identify{
+    width: 110px;
+    height: 30px;
+    margin-left: 8px;
+}
+#changeCode{
+    width: 30px;
+    height: 30px;
+    margin-left: 8px;
+}
+.form button{
+    display: block;
+    width: 300px;
+    height: 25px;
+    margin: 0 auto;
+    margin-top: 35px;
+    background-color:rgb(255, 255, 138);
+    cursor: pointer;
+}

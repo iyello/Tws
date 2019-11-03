@@ -1,0 +1,353 @@
+*{margin: 0;padding: 0;border:0; font-size: 0.625rem;}
+.box{
+    margin:0px 0px;
+    width:1210px;
+    margin:auto;
+}
+header{
+    width: 1200px;
+    height: 130px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+header>img{
+    width: 180px;
+    height: 100px;
+    margin-top:20px;
+    margin-left: 30px;
+    vertical-align: -140%;
+}
+header>.top_search{
+    display: inline-block;
+    width: 560px;
+    height: 30px;
+    margin-left: 218px;
+    margin-top: 60px;
+    border: 2px solid #91C8F0;
+    text-align: center;
+}
+header>.top_search>input{
+    width: 480px;
+    height: 30px;
+    text-indent: 2em;
+    font-size: 1.6rem;
+}
+header>.top_search>aside{
+    float: right;
+    width: 80px;
+    height: 30px;
+    line-height: 30px; 
+    background-color: #91C8F0;
+    font-size: 3em;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer; 
+}
+.topBox{
+    /* position: absolute; */
+    height:600px;
+    margin:45px 0px;
+}
+.showBox{
+    /* position: absolute;
+    top:0px;
+    left:0px; */
+    float: left;
+    width:420px;
+    margin:0px 0px;
+}
+.contentBox{
+    /* position: relative;
+    top:0px;
+    left:480px; */
+    float: left;
+    width:425px;
+    margin:0px 78px;
+}
+.watchBox{
+    /* position: relative;
+    top:0px;
+    left:0px; */
+    float: left;
+    margin:0px 0px;
+}
+.showTop{
+    margin:0px 0px;
+}
+.showPic{
+    width:400px;
+    height:400px;
+    margin:0px 0px;
+}
+.showButtom{    
+    padding:10px 36px;
+}
+.showButtom ul{
+    padding:0px 0px;
+}
+.showButtom ul li{
+    list-style: none;
+    margin:0px 5px;
+    float: left;
+    cursor: pointer;
+}
+.showButtom ul li img{
+    width:73px;
+    height:73px;
+}
+.showButtom ul li :hover{
+    list-style: none;
+    margin:0px 0px;
+    float: left;
+    border:2px solid #f50;
+}
+.priceSty{
+    margin:0px 0px;
+    color:#91C8F0;
+    font-size:20px;
+}
+.title{
+    font-size:20px;
+    font-weight:bold;
+}
+dl {
+    margin-top: 19px;
+    margin-bottom: 20px;
+}
+dt,dd{
+    display:inline;
+    color:#747373;
+    font-size:15px;
+    font-weight:lighter;
+    font-family:微软雅黑;
+}
+#bfPriBox{
+    display: inline;   
+}
+#afPriBox{
+    display: inline;
+}
+.formSty{
+}
+.selectBox{
+    height:177px;
+    width:384px;
+    background-color:#DFF2FF;
+    padding:1px 16px;
+    margin:0px 0px;
+}
+.selectBox dl{
+    margin:30px 0px;
+    padding: 0px 0px;
+}
+.selectDt{
+    float: left;
+    margin:6px 0px;
+}
+.selectList{
+    float: left;
+}
+.selectList li{
+    width:84px ;
+    height:31px ;
+    margin:0px 8px;
+    border:0.5px solid #b5b6b6 ;
+    text-align: center ;
+    background-color:white;
+    font-size:12px;
+    cursor: pointer;
+    list-style: none;
+    float: left;
+}
+.selectList li span{
+    color:black;
+    font-size:12px;
+    line-height:29px;
+    font-family: "微软雅黑";
+}
+.numSty{
+    width:84px ;
+    height:31px ;
+    color:#747373;
+    border:0.5px solid #b6b5b5 ;
+    outline:none ;
+    text-align: center ;
+    float: left; 
+    font-size:12px;
+    margin:0px 8px;
+}
+.numBtn{
+    width:19px;
+    height:13.5px;
+    display: block;
+    cursor:pointer;
+}
+.buyIpt{
+    height:38px;
+    width:130px;
+    background-color:#91C8F0;
+    border-radius: 5px;
+    margin:27px 47px;
+    color:white;
+    outline: none;
+    cursor: pointer;
+}
+.addIpt{
+    height:38px;
+    width:130px;
+    background-color:#F0E688;
+    border-radius: 5px;
+    margin:0px 0px;
+    color:white;
+    outline: none;
+    cursor: pointer;
+}
+.line{
+    border-right: 1.3px solid #eee;
+    height:500px;
+    float: left;
+}
+.wTop{
+    height:50px;
+    width:120px;
+    margin:40px 42px;
+}
+.row1{
+    height:2px;
+    width:20px;
+    background-color: #eee;
+    margin:15px 2px;
+    float:left;
+}
+.wTitleSty{
+    margin:0.5rem 0.5rem;
+    font-size:0.8rem;
+    color:#878787;
+    font-style:微软雅黑;
+    float:left;
+}
+.row2{
+    height:2px;
+    width:20px;
+    background-color: #eee;
+    margin:15px 3px;
+    float:left
+    ;
+}
+.wPicBox{
+    margin:-45px 42px;
+}
+.wPicBox ul :hover{
+    color:#f50;
+    cursor: pointer;
+}
+.wPicBox ul li{
+    list-style: none;
+    margin:19px 0px;
+}
+.wPic{
+    width:120px;
+    height:120px;
+}
+.wPrice{
+    width:120px;
+    height:20px;
+    background-color:white;
+    opacity:0.8;
+    text-align:center;
+    line-height:21px;
+    margin-top:-24px;
+    font-size:5px;
+}
+.tabareaBox{
+    margin:0px 0px;
+    width:800px;
+    margin:auto;
+    cursor: pointer;
+}
+#tabarea ul{
+    color:#878787;
+    cursor:hand;
+}
+#tabarea ul li{
+    list-style: none;
+    display: inline;
+    margin:0px -3px;
+    padding:15px 25px;
+}
+.tabHover{
+    background-color:#91C8F0;
+    color:white;
+}
+.contentFirst{
+    display: none;
+}
+.contentIn{
+    display: block;
+}
+#detail{
+    margin:40px -24px;
+}
+#detail li{
+    list-style: none;
+}
+#detail li img{
+    width:800px;
+    margin:10px 21px;
+}
+#content {
+    width:800px;
+    height:800px;
+    margin:50px 0px;
+}
+#content ul{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+#content li{
+    height:135px;
+    width:799px;
+    border-bottom: 1px solid #ddd;
+    display: block;
+    margin:0px 0px;
+}
+.contentLeft{
+    height:100px;
+    width:76px;
+    float:left;
+    margin:0px 39px;
+}
+.contentLeft span{
+    display: block;
+    margin:15px 12px;
+    font-size:15px;
+}
+.headSty{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    display: block;
+}
+.contentRight{
+    display: inline;
+    margin:0px 0px;
+}
+.starBox{
+    margin:30px 0px;
+}
+.starSty{
+    width:15px;
+    height:15px;
+}
+.contentRight p{
+    margin:-6px 0px;
+    font-size:15px;
+    display: block;
+    width:782px;
+}
+.contentRight span{
+    margin:33px 0px;
+    font-size:14px;
+    display: block;
+}
