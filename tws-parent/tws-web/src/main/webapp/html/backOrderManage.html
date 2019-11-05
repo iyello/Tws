@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>后台订单管理</title>
+    <link type="text/css" rel="stylesheet" href="../css/reset.css" />
+    <link type="text/css" rel="stylesheet" href="../css/backOrderManage.css" />
+</head>
+
+<body>
+    <div class="mainBox">
+        <div class="topBox">
+            <div class="select">
+                <div class="selPage">订单管理<span><img src="../img/backManage/down.png"/></span></div>
+                <ul>
+                    <li><a href="backOrderManage.html">订单管理</a></li>
+                    <li><a href="backOrderManage.html">商品管理</a></li>
+                </ul>
+            </div>
+            <span>订单管理</span>
+            <div class="search">
+                <input type="text" value="" style="text-indent:1em;"/>
+                <button>
+                    搜索订单
+                </button>
+            </div>
+        </div>
+        <div class="orderBox">
+            <p>订单管理</p>
+            <table style="border: 1px solid red;"></table>
+            <div id="divPage"></div>
+        </div>
+    </div>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/backOrderManage.js"></script>
+</body>
+
+</html>
