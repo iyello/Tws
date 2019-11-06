@@ -113,7 +113,14 @@ var selPage = document.getElementsByClassName("selPage")[0];
 var selImg = selPage.getElementsByTagName("img")[0];
 var selUl = select.getElementsByTagName("ul")[0];
 selPage.onclick = function(){
-    alert("dsaf");
+    var imgSrc = selImg.src.split('/').pop();
+    if(imgSrc == 'down.png'){
+        selUl.className = "db";
+        selImg.src="../img/backManage/up.png";
+    }else{
+        selUl.className = "dn";
+        selImg.src="../img/backManage/down.png";
+    }
 }
 
 //点击搜索按钮调用接口
