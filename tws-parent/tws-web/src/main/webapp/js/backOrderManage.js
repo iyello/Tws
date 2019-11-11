@@ -1,125 +1,125 @@
-//数据
-var getComResult = {
-    "code": "1",
-    "msg": "成功",
-    "count": 4,//每页数量
-    "allLength": 10,
-    "orders": [
-        {
-            imgUrl: '../image/pic1.jpg',
-            userName: '黄i性能',
-            title: '面卡其2019新款泫雅风条纹宽松打底针织衫长袖平色字母套头毛衣女fadsfdsajk手段狠辣尽快',
-            price: '79.00',
-            style: '白灰',
-            styleTwo: '你会',
-            amount: '1',
-            goodsStatus: "-1",
-            id: 1
-        },
-        {
-            imgUrl: '../image/pic1.jpg',
-            userName: '黄i性能',
-            title: '【电子书赠品】记忆宫殿一本书快速提升记忆力 下载天猫读书读',
-            price: '79.00',
-            style: '白灰',
-            styleTwo: '你会',
-            amount: '1',
-            goodsStatus: "-1",
-            id: 2
-        },
-        {
-            imgUrl: '../image/pic1.jpg',
-            userName: '黄i性能',
-            title: '掏耳棉签包邮木棒婴儿棉棒黑色双头无菌掏耳朵尖头口红化妆用盒装',
-            price: '60.00',
-            style: '白灰',
-            styleTwo: '你会',
-            amount: '1',
-            goodsStatus: "0",
-            id: 3
-        },
-        {
-            imgUrl: '../image/pic1.jpg',
-            userName: '黄i性能',
-            title: '襄遇二阳手工小麻花128gX4袋装休闲食品整箱酥脆怀旧特产零食小吃',
-            price: '40.00',
-            style: '白灰',
-            styleTwo: '你会',
-            amount: '1',
-            goodsStatus: "1",
-            id: 4
-        },
-        {
-            imgUrl: '../image/pic2.jpg',
-            userName: '黄i性能',
-            title: '面卡其2019新款泫雅风条纹宽松打底针织衫长袖平色字母套头毛衣女',
-            price: '79.00',
-            style: '白灰',
-            styleTwo: '你会',
-            amount: '1',
-            goodsStatus: "0",
-            id: 5
-        },
-        {
-            imgUrl: '../image/pic2.jpg',
-            userName: '黄i性能',
-            title: '【电子书赠品】记忆宫殿一本书快速提升记忆力 下载天猫读书读',
-            price: '79.00',
-            style: '白灰',
-            styleTwo: '你会',
-            amount: '1',
-            goodsStatus: "-1",
-            id: 6
-        },
-        {
-            imgUrl: '../image/pic2.jpg',
-            userName: '黄i性能',
-            title: '面卡其2019新款泫雅风条纹宽松打底针织衫长袖平色字母套头毛衣女',
-            price: '79.00',
-            style: '白灰',
-            styleTwo: '你会',
-            amount: '1',
-            goodsStatus: "0",
-            id: 7
-        },
-        {
-            imgUrl: '../image/pic1.jpg',
-            userName: '黄i性能',
-            title: '【电子书赠品】记忆宫殿一本书快速提升记忆力 下载天猫读书读',
-            price: '79.00',
-            style: '白灰',
-            styleTwo: '你会',
-            amount: '1',
-            goodsStatus: "0",
-            id: 8
-        },
-        {
-            imgUrl: '../image/pic1.jpg',
-            userName: '黄i性能',
-            title: '面卡其2019新款泫雅风条纹宽松打底针织衫长袖平色字母套头毛衣女',
-            price: '79.00',
-            style: '白灰',
-            styleTwo: '你会',
-            amount: '1',
-            goodsStatus: "0",
-            id: 9
-        }
+// //数据
+// var getComResult = {
+//     "code": "1",
+//     "msg": "成功",
+//     "count": 4,//每页数量
+//     "allLength": 10,
+//     "orders": [
+//         {
+//             src: '../image/pic1.jpg',
+//             username: '黄i性能',
+//             pname: '面卡其2019新款泫雅风条纹宽松打底针织衫长袖平色字母套头毛衣女fadsfdsajk手段狠辣尽快',
+//             price: '79.00',
+//             classify1: '白灰',
+//             classify2: '你会',
+//             subtotal: '1',
+//             state: "-1",
+//             itemid: 1
+//         },
+//         {
+//             src: '../image/pic1.jpg',
+//             username: '黄i性能',
+//             pname: '【电子书赠品】记忆宫殿一本书快速提升记忆力 下载天猫读书读',
+//             price: '79.00',
+//             classify1: '白灰',
+//             classify2: '你会',
+//             subtotal: '1',
+//             state: "-1",
+//             itemid: 2
+//         },
+//         {
+//             src: '../image/pic1.jpg',
+//             username: '黄i性能',
+//             pname: '掏耳棉签包邮木棒婴儿棉棒黑色双头无菌掏耳朵尖头口红化妆用盒装',
+//             price: '60.00',
+//             classify1: '白灰',
+//             classify2: '你会',
+//             subtotal: '1',
+//             state: "0",
+//             itemid: 3
+//         },
+//         {
+//             src: '../image/pic1.jpg',
+//             username: '黄i性能',
+//             pname: '襄遇二阳手工小麻花128gX4袋装休闲食品整箱酥脆怀旧特产零食小吃',
+//             price: '40.00',
+//             classify1: '白灰',
+//             classify2: '你会',
+//             subtotal: '1',
+//             state: "1",
+//             itemid: 4
+//         },
+//         {
+//             src: '../image/pic2.jpg',
+//             username: '黄i性能',
+//             pname: '面卡其2019新款泫雅风条纹宽松打底针织衫长袖平色字母套头毛衣女',
+//             price: '79.00',
+//             classify1: '白灰',
+//             classify2: '你会',
+//             subtotal: '1',
+//             state: "0",
+//             itemid: 5
+//         },
+//         {
+//             src: '../image/pic2.jpg',
+//             username: '黄i性能',
+//             pname: '【电子书赠品】记忆宫殿一本书快速提升记忆力 下载天猫读书读',
+//             price: '79.00',
+//             classify1: '白灰',
+//             classify2: '你会',
+//             subtotal: '1',
+//             state: "-1",
+//             itemid: 6
+//         },
+//         {
+//             src: '../image/pic2.jpg',
+//             username: '黄i性能',
+//             pname: '面卡其2019新款泫雅风条纹宽松打底针织衫长袖平色字母套头毛衣女',
+//             price: '79.00',
+//             classify1: '白灰',
+//             classify2: '你会',
+//             subtotal: '1',
+//             state: "0",
+//             itemid: 7
+//         },
+//         {
+//             src: '../image/pic1.jpg',
+//             username: '黄i性能',
+//             pname: '【电子书赠品】记忆宫殿一本书快速提升记忆力 下载天猫读书读',
+//             price: '79.00',
+//             classify1: '白灰',
+//             classify2: '你会',
+//             subtotal: '1',
+//             state: "0",
+//             itemid: 8
+//         },
+//         {
+//             src: '../image/pic1.jpg',
+//             username: '黄i性能',
+//             pname: '面卡其2019新款泫雅风条纹宽松打底针织衫长袖平色字母套头毛衣女',
+//             price: '79.00',
+//             classify1: '白灰',
+//             classify2: '你会',
+//             subtotal: '1',
+//             state: "0",
+//             itemid: 9
+//         }
 
-    ]
-}
+//     ]
+// }
 //点击选择订单管理和商品管理的下拉框
 var select = document.getElementsByClassName("select")[0];
 var selPage = document.getElementsByClassName("selPage")[0];
 var selImg = selPage.getElementsByTagName("img")[0];
 var selUl = select.getElementsByTagName("ul")[0];
-selPage.onclick = function(){
+selPage.onclick = function () {
     var imgSrc = selImg.src.split('/').pop();
-    if(imgSrc == 'down.png'){
+    if (imgSrc == 'down.png') {
         selUl.className = "db";
-        selImg.src="../img/backManage/up.png";
-    }else{
+        selImg.src = "../img/backManage/up.png";
+    } else {
         selUl.className = "dn";
-        selImg.src="../img/backManage/down.png";
+        selImg.src = "../img/backManage/down.png";
     }
 }
 
@@ -132,28 +132,24 @@ searchBtn.onclick = function () {
     } else {
         console.log("点击搜索的接口" + searchText.value);
         $.ajax({
-            url: 'productAction_recommendProduct.action',//页面一进来的接口
+            url: 'adminOrderAction_findOrderItemByName.action',//页面一进来的接口
             type: 'post',//方法
             cache: false,//是否缓存
             dataType: 'json',//返回值的类型
             data: {
-                "index": searchText.value
+                "pname": searchText.value,
+                "currentPage": 1
             },
             success: function (getComResult) {
                 if (getComResult.code == "1" || getComResult.code == 1) {
                     //函数调用
-                    goPage(1, getComResult.count, getComResult.orders);
+                    goPage(1, getComResult.total, getComResult.data);
                 } else {
                     alert(getComResult.msg);
                 }
             },
             error: function () {
-                if (getComResult.code == "1" || getComResult.code == 1) {
-                    //函数调用
-                    goPage(1, getComResult.count, getComResult.orders, getComResult.allLength);
-                } else {
-                    alert(getComResult.msg);
-                }
+                alert("网络传输有误！请检查你的网络连接！");
             }
         });
     }
@@ -181,60 +177,60 @@ var getTable = function (i, page, orders) {
     var tdHtml = "";
     var b = i + page;
     for (i; i < b; i++) {
-        if (orders[i].goodsStatus == -1) {
+        if (orders[i].state == -1) {
             tdHtml +=
                 "<tr>" +
                 "<td>" +
                 "<input type='checkbox' name='check'/>" +
-                "<img src='" + orders[i].imgUrl + "' alt='" + orders[i].id + "'>" +
+                "<img src='" + orders[i].src + "' alt='" + orders[i].itemid + "'>" +
                 "</td>" +
                 "<td style='text-align:center;'>" +
-                "<span>" + orders[i].userName + "</span>" +
+                "<span>" + orders[i].username + "</span>" +
                 "</td>" +
                 "<td>" +
-                "<span class='title'>" + orders[i].title + "</span>" +
+                "<span class='title'>" + orders[i].pname + "</span>" +
                 "</td>" +
                 "<td class='price'>" +
                 "¥<span>" + orders[i].price + "</span>" +
                 "</td>" +
                 "<td class='style'>" +
-                "<span>" + orders[i].style + "</span>" +
+                "<span>" + orders[i].classify1 + "</span>" +
                 "</td>" +
                 "<td class='style'>" +
-                "<span>" + orders[i].styleTwo + "</span>" +
+                "<span>" + orders[i].classify2 + "</span>" +
                 "</td>" +
                 "<td class='amount'>" +
-                "<span>" + orders[i].amount + "</span>" +
+                "<span>" + orders[i].subtotal + "</span>" +
                 "</td>" +
                 "<td class='status'>" +
                 "<button>" + '发货' + "</button>" +
                 "</td>" +
                 "</tr>"
                 ;
-        } else if (orders[i].goodsStatus == 0) {
+        } else if (orders[i].state == 0) {
             tdHtml +=
                 "<tr>" +
                 "<td>" +
                 "<input type='checkbox' name='check'/>" +
-                "<img src='" + orders[i].imgUrl + "' alt='" + orders[i].id + "'>" +
+                "<img src='" + orders[i].src + "' alt='" + orders[i].itemid + "'>" +
                 "</td>" +
                 "<td style='text-align:center;'>" +
-                "<span>" + orders[i].userName + "</span>" +
+                "<span>" + orders[i].username + "</span>" +
                 "</td>" +
                 "<td>" +
-                "<span class='title'>" + orders[i].title + "</span>" +
+                "<span class='title'>" + orders[i].pname + "</span>" +
                 "</td>" +
                 "<td class='price'>" +
                 "¥<span>" + orders[i].price + "</span>" +
                 "</td>" +
                 "<td class='style'>" +
-                "<span>" + orders[i].style + "</span>" +
+                "<span>" + orders[i].classify1 + "</span>" +
                 "</td>" +
                 "<td class='style'>" +
-                "<span>" + orders[i].styleTwo + "</span>" +
+                "<span>" + orders[i].classify2 + "</span>" +
                 "</td>" +
                 "<td class='amount'>" +
-                "<span>" + orders[i].amount + "</span>" +
+                "<span>" + orders[i].subtotal + "</span>" +
                 "</td>" +
                 "<td class='status'>" +
                 "<span>" + '已确认收货' + "</span>" +
@@ -246,25 +242,25 @@ var getTable = function (i, page, orders) {
                 "<tr>" +
                 "<td>" +
                 "<input type='checkbox' name='check'/>" +
-                "<img src='" + orders[i].imgUrl + "' alt='" + orders[i].id + "'>" +
+                "<img src='" + orders[i].src + "' alt='" + orders[i].itemid + "'>" +
                 "</td>" +
                 "<td style='text-align:center;'>" +
-                "<span>" + orders[i].userName + "</span>" +
+                "<span>" + orders[i].username + "</span>" +
                 "</td>" +
                 "<td>" +
-                "<span class='title'>" + orders[i].title + "</span>" +
+                "<span class='title'>" + orders[i].pname + "</span>" +
                 "</td>" +
                 "<td class='price'>" +
                 "¥<span>" + orders[i].price + "</span>" +
                 "</td>" +
                 "<td class='style'>" +
-                "<span>" + orders[i].style + "</span>" +
+                "<span>" + orders[i].classify1 + "</span>" +
                 "</td>" +
                 "<td class='style'>" +
-                "<span>" + orders[i].styleTwo + "</span>" +
+                "<span>" + orders[i].classify2 + "</span>" +
                 "</td>" +
                 "<td class='amount'>" +
-                "<span>" + orders[i].amount + "</span>" +
+                "<span>" + orders[i].subtotal + "</span>" +
                 "</td>" +
                 "<td class='status'>" +
                 "<span>" + '已发货' + "</span>" +
@@ -351,35 +347,29 @@ function goPage(pageIndex, pageStep, orders, allLength) {
             }
         }
         console.log("删除接口" + delArray);
-        $.ajax({
-            url: 'productAction_recommendProduct.action',//页面一进来的接口
-            type: 'post',//方法
-            cache: false,//是否缓存
-            dataType: 'json',//返回值的类型
-            data: {
-                "index": delArray
-            },
-            success: function (getComResult) {
-                if (getComResult.code == "1" || getComResult.code == 1) {
-                    //函数调用
-                    console.log("删除调用接口成功！");
-                    console.log("页数" + pageIndex);
-                    goPage(pageIndex, getComResult.count, getComResult.orders, getComResult.allLength);
-                } else {
-                    alert(getComResult.msg);
+        if (delArray.length != 0) {
+            $.ajax({
+                url: 'adminOrderAction_deleteOrderItemById.action',//删除订单的接口
+                type: 'post',//方法
+                cache: false,//是否缓存
+                dataType: 'json',//返回值的类型
+                data: {
+                    "itemJSON": delArray
+                },
+                success: function (getComResult) {
+                    if (getComResult.code == "1" || getComResult.code == 1) {
+                        //函数调用
+                        console.log("页数" + pageIndex);
+                        goPage(pageIndex, getComResult.count, getComResult.orders, getComResult.allLength);
+                    } else {
+                        alert(getComResult.msg);
+                    }
+                },
+                error: function () {
+                    alert("网络传输有误！请检查你的网络连接！");
                 }
-            },
-            error: function () {
-                if (getComResult.code == "1" || getComResult.code == 1) {
-                    //函数调用
-                    console.log("删除调用接口成功！");
-                    console.log("页数" + pageIndex);
-                    goPage(pageIndex, getComResult.count, getComResult.orders, getComResult.allLength);
-                } else {
-                    alert(getComResult.msg);
-                }
-            }
-        });
+            });
+        }
     }
 
 
@@ -393,12 +383,12 @@ function goPage(pageIndex, pageStep, orders, allLength) {
                 var btnIndex = this.index;
                 console.log("点击发货调用接口" + orderNumber);
                 $.ajax({
-                    url: 'productAction_recommendProduct.action',//页面一进来的接口
+                    url: 'adminOrderAction_deleteOrderItemById.action',//页面一进来的接口
                     type: 'post',//方法
                     cache: false,//是否缓存
                     dataType: 'json',//返回值的类型
                     data: {
-                        "index": orderNumber
+                        "itemid": orderNumber
                     },
                     success: function (getComResult) {
                         if (getComResult.code == "1" || getComResult.code == 1) {
@@ -409,13 +399,7 @@ function goPage(pageIndex, pageStep, orders, allLength) {
                         }
                     },
                     error: function () {
-                        if (getComResult.code == "1" || getComResult.code == 1) {
-                            //函数调用
-                            tabBtn[btnIndex].className = "alreadyBtn";
-                            tabBtn[btnIndex].innerText = "已发货";
-                        } else {
-                            alert(getComResult.msg);
-                        }
+                        alert("网络传输有误！请检查你的网络连接！");
                     }
                 });
             }
@@ -444,28 +428,23 @@ function goPage(pageIndex, pageStep, orders, allLength) {
 function getOrders(pageIndex) {
     console.log("获得每页订单得接口" + pageIndex);
     $.ajax({
-        url: 'productAction_recommendProduct.action',//页面一进来的接口
+        url: 'adminOrderAction_findAllOrderItem.action',//页面一进来的接口
         type: 'post',//方法
         cache: false,//是否缓存
         dataType: 'json',//返回值的类型
         data: {
-            "index": pageIndex
+            "currentPage": pageIndex
         },
         success: function (getComResult) {
             if (getComResult.code == "1" || getComResult.code == 1) {
                 //函数调用
-                goPage(pageIndex, getComResult.count, getComResult.orders);
+                goPage(pageIndex, getComResult.total, getComResult.data);
             } else {
                 alert(getComResult.msg);
             }
         },
         error: function () {
-            if (getComResult.code == "1" || getComResult.code == 1) {
-                //函数调用
-                goPage(pageIndex, getComResult.count, getComResult.orders, getComResult.allLength);
-            } else {
-                alert(getComResult.msg);
-            }
+            alert("网络传输有误！请检查你的网络传输！");
         }
     });
 }

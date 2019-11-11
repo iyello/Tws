@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>后台商品管理</title>
+    <link type="text/css" rel="stylesheet" href="../css/reset.css" />
+    <link type="text/css" rel="stylesheet" href="../css/backComManage.css" />
+</head>
+
+<body>
+    <div class="mainBox">
+        <div class="topBox">
+            <div class="select">
+                <div class="selPage">商品管理<span><img src="../img/backManage/down.png" /></span></div>
+                <ul>
+                    <li><a href="backcomManage.html">商品管理</a></li>
+                    <li><a href="backOrderManage.html">订单管理</a></li>
+                </ul>
+            </div>
+            <span>商品管理</span>
+            <div class="search">
+                <input type="text" value="" style="text-indent:1em;" />
+                <button>
+                    搜索商品
+                </button>
+            </div>
+        </div>
+        <div class="orderBox">
+            <p>商品管理</p>
+            <button id = "addCom">+新增商品</button>
+            <table style="border: 1px solid red;"></table>
+            <div id="divPage"></div>
+        </div>
+    </div>
+    <div id="shade">
+        <div id="cover">
+            <ul>
+                <li style="margin-top:30px;">
+                    <label>商品分类：</label>
+                    <div class="selPage2">
+                        <div class="select2"><b>生活家电</b><span><img src="../img/backManage/down.png" /></span></div>
+                        <ul id="classify">
+                            <li>生活家电</li>
+                            <li>衣物服饰</li>
+                            <li>食品生鲜</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <label for="titile">商品名：</label>
+                    <input type="text" id="titile" />
+                </li>
+                <li>
+                    <label for="oPrice">原&nbsp;价：</label>
+                    <input type="text" id="oPrice" />
+                </li>
+                <li>
+                    <label for="nPrice">打&nbsp;折&nbsp;价：</label>
+                    <input type="text" id="nPrice" />
+                </li>
+                <li>
+                    <label for="isPrice">是否打折：</label>
+                    <input type="text" id="isPrice" />
+                </li>
+                <li>
+                    <label for="address">发&nbsp;货&nbsp;地：</label>
+                    <input type="text" id="address" />
+                </li>
+                <li>
+                    <label for="styleOne">商品分类1：</label>
+                    <input type="text" id="styleOne" />
+                </li>
+                <li>
+                    <label for="styleTwo">商品分类2：</label>
+                    <input type="text" id="styleTwo" />
+                </li>
+                <li class="uploadImg">
+                    <div>
+                        <span>图&nbsp;片&nbsp;1：</span>
+                        <img src="../img/backManage/upload.jpg" alt="上传照片" />
+                        <button>上传图片</button>
+                        <input accept="image/*" type="file" onfocus="this.blur()" />
+                    </div>
+                    <div>
+                        <span>图&nbsp;片&nbsp;1：</span>
+                        <img src="../img/backManage/upload.jpg" alt="上传照片" />
+                        <button>上传图片</button>
+                        <input accept="image/*" type="file" id="upload" name="upload" onfocus="this.blur()" />
+                    </div>
+                    <div style="margin-right:0;">
+                        <span>图&nbsp;片&nbsp;1：</span>
+                        <img src="../img/backManage/upload.jpg" alt="上传照片" />
+                        <button>上传图片</button>
+                        <input accept="image/*" type="file" id="upload" name="upload" onfocus="this.blur()" />
+                    </div>
+                </li>
+                <li class="uploadImg">
+                    <div>
+                        <span>图&nbsp;片&nbsp;1：</span>
+                        <img src="../img/backManage/upload.jpg" alt="上传照片" />
+                        <button>上传图片</button>
+                        <input accept="image/*" type="file" onfocus="this.blur()" />
+                    </div>
+                    <div>
+                        <span>图&nbsp;片&nbsp;1：</span>
+                        <img src="../img/backManage/upload.jpg" alt="上传照片" />
+                        <button>上传图片</button>
+                        <input accept="image/*" type="file" id="upload" name="upload" onfocus="this.blur()" />
+                    </div>
+                </li>
+                <li>
+                    <button id="cancel">取消</button>
+                    <button id="save">保存并上传</button>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/backComManage.js"></script>
+</body>
+
+</html>

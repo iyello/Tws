@@ -1,0 +1,385 @@
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+a{ 
+    text-decoration:none !important;
+    color:black !important; 
+}
+.topBox{
+    width:1300px;
+    height:130px;
+    background-color:#DFF2FF;
+    margin:auto;
+    line-height:110px;
+}
+.select{
+    position: relative;
+    top: -30px;
+    left: 20px;
+    display: inline-block;
+    width: 90px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    background: white;
+}
+.selPage{
+    width: 70px;
+    height:25px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+}
+.select ul{
+    display: none;
+    position: absolute;
+    top:27px;
+    left: 0;
+    width: 70px;
+    border: 1px solid #bbb;
+    border-top: none;
+    background: white;
+}
+.dn{
+    display: none!important;
+}
+.db{
+    display: block!important;
+}
+.select ul li{
+    width: 70px;
+    height: 19px;
+    line-height: 19px;
+    font-size: 14px;
+    color: #000000;
+    text-align: center;
+}
+.select ul li:hover{
+    background: #bbb;
+}
+
+.select span{
+    position: absolute;
+    top: 0 ;
+    left: 72px;
+    display: inline-block;
+    width: 18px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #bbb;
+    border-left: none;
+    background: white;
+    text-align: center;
+}
+.select span>img{
+    width: 10px;
+    height: 10px;
+    margin-top: 7px;
+}
+.topBox>span{
+    color:#8ec9e2;
+    font-size:50px;
+    font-weight:bold;
+    margin:0px 130px;
+    width:100px;
+}
+.search{
+    float:right;
+    margin:47px 120px;
+}
+.search input{
+    width:350px;
+    height:30px;
+    border: 2px solid #91C8F0;
+    outline: none;
+    font-size:15px;
+    color:#91C8F0;
+    margin:0px 0px;
+    float: left;
+
+}
+.search button{
+    width:120px;
+    height:34px;
+    margin:0px -5px;
+    background-color: #91C8F0;
+    color:white;
+    font-size:17px;
+    font-family:"微软雅黑";
+    outline: none;
+    cursor: pointer;
+    display: block;
+    float:left;
+}
+.orderBox{
+    width:1180px;
+    /* height:700px; */
+    margin:35px auto;
+}
+.orderBox p{
+    font-size:20px;
+    font-weight:bold;
+    margin:0px 30px;
+    color:rgb(44, 45, 46);
+}
+.orderBox #addCom{
+    float: right;
+    width: 90px;
+    height: 29px;
+    background: #f0e688;
+}
+table{
+    width:1150px;
+    margin:40px 30px;
+}
+table tr{
+    margin:0px 0px;
+    padding:0px 0px;
+    height:30px;
+}
+.all{
+    width:15px;
+    height:15px;
+    margin:3px 0px;
+    display: block;
+    float: left;
+}
+table tr th{
+    padding:0px 0px;
+}
+table tr td{
+    margin: 0px 0px;
+    padding:18px 0px; 
+}
+table tr td input{ 
+    width:15px;
+    height:15px;
+    margin:26px 0px;
+    display: block;
+    float: left;
+}
+table tr td img{ 
+    width:70px;
+    height:70px;
+    margin:0px 15px;
+}
+
+.title{
+    display: block;
+    padding: 0 10px;
+}
+.price{
+    text-align: center;
+    margin:0px 0px;
+}
+.style{
+    margin:0px 0px;
+    text-align: center;
+    /* border:1px solid red; */
+    padding: 0 13px;
+}
+.amount{
+    margin:0px 0px;
+    text-align: center;
+}
+.status{
+    margin:0px 0px;
+    text-align: center;
+}
+table tr td button{
+    width:68px;
+    height:25px;
+    margin:0px 10px;
+    background-color: #91C8F0;
+    color:white;
+    font-size:14px;
+    font-family:"微软雅黑";
+    outline: none;
+}
+.alreadyBtn{
+    background:none!important;
+    color:black!important;
+    cursor: text!important;
+}
+#divPage{
+    margin:0px 37px;
+    float: right;
+    padding:0px 0px;
+}
+#divPage span{
+    padding:4px 10px;
+    border: 1px solid #e8e8e8;
+}
+#divPage a{
+    padding:4px 10px;
+    border: 1px solid #e8e8e8;
+    text-decoration: none;
+    color:black;
+}
+.aCur{
+    border: 1px solid #e8e8e8;
+    background-color:#91C8F0;
+}
+#delete{
+    color:red;
+    cursor: pointer;
+}
+
+#shade{
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(243,243,243,0.5);
+}
+#cover{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -300px;
+    margin-top: -300px;
+    z-index: 2;
+    width: 600px;
+    height: 600px;
+    background: white;
+    border:1px solid #e8e8e8;
+}
+ .selPage2{
+    position:relative;
+    display: inline-block;
+    width: 90px;
+    height:25px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+}
+
+.selPage2 ul{
+    display: none;
+    position: absolute;
+    top:27px;
+    left: -1px;
+    width: 90px;
+    border: 1px solid #bbb;
+    border-top: none;
+    background: white;
+}
+.select2{
+    position: relative;
+    top: 0px;
+    /* left: 92px; */
+    display: inline-block;
+    width: 90px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    background: white;
+}
+
+#cover #classify li{
+    width: 90px;
+    height: 25px;
+    line-height: 25px;
+    margin-top:0!important;
+    font-size: 14px;
+    color: #000000;
+    text-align: center;
+}
+
+.select2 ul li:hover{
+    background: #bbb;
+}
+.select2>b{
+    font-weight: normal;
+}
+.select2 span{
+    position: absolute;
+    top: -1px ;
+    left: 91px;
+    display: inline-block;
+    width: 18px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #bbb;
+    border-left: none;
+    background: white;
+    text-align: center;
+}
+.select2 span>img{
+    width: 10px;
+    height: 10px;
+    margin-top: 7px;
+} 
+
+#cover li{
+    display: block;
+    width: 500px;
+    height: 28px;
+    margin: 0 auto;
+    margin-top:10px;
+    /* border:1px solid red; */
+    font-size: 14px;
+}
+#cover li>label{
+    display: inline-block;
+    width: 80px;
+    height:28px;
+    line-height:28px;
+    /* border: 1px solid blue; */
+}
+#cover li>input{
+    display: inline-block;
+    width: 410px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #bbb;
+    text-indent: 1.2em;
+    text-overflow: ellipsis;
+}
+.uploadImg{
+   height: 80px!important; 
+}
+.uploadImg>div{
+    display: inline-block;
+    width: 148px;
+    height: 100%;
+    margin-right: 20px;
+    /* border:1px solid blue; */
+    overflow: hidden;
+
+}
+.uploadImg>div>img{
+    float: right;
+    width: 80px;
+    height: 80px;
+}
+.uploadImg>div>input{
+    opacity: 0;
+}
+.uploadImg>div>button{
+    width: 52px;
+    height:25px;
+    margin-top:20px;
+    background-color: #91C8F0;
+    color:white;
+    font-size:12px;
+    font-family:"微软雅黑";
+    outline: none;
+}
+#cover li:last-child{
+    margin-top: 25px!important;
+}
+#cover li:last-child>button:first-child{
+    width: 50px;
+    height: 28px;
+    background: #cacaca;
+}
+#cover li:last-child>button:last-child{
+    width: 410px;
+    height: 28px;
+    margin-left: 30px;
+    background: #f0e688;
+}
+
