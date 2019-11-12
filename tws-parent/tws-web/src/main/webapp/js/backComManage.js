@@ -541,7 +541,11 @@ function goPage(pageIndex, pageStep, orders, allLength) {
         shade.className = "dn";
         document.getElementsByTagName("body")[0].style.overflow = "auto";
     }
-
+    var cancelP = document.getElementById("cover").getElementsByTagName("p")[0];
+    cancelP.onclick = function () {
+        shade.className = "dn";
+        document.getElementsByTagName("body")[0].style.overflow = "auto";
+    }
 
     //全选
     document.getElementById("checkAll").onclick = function () {
@@ -597,96 +601,190 @@ addCom.onclick = function () {
     shade.className = "db";
     document.getElementsByTagName("body")[0].style.overflow = "hidden";
     reset();
-    var save = document.getElementById("save");
+    //var save = document.getElementById("save");
 
-    //点击新增按钮
-    save.onclick = function () {
-        var coverLis = document.getElementById("cover").getElementsByTagName("li");
-        var classify = coverLis[0].getElementsByTagName("b")[0];
-        var title = coverLis[4].getElementsByTagName("input")[0];
-        var oPrice = coverLis[5].getElementsByTagName("input")[0];
-        var nPrice = coverLis[6].getElementsByTagName("input")[0];
-        var isPrice = coverLis[7].getElementsByTagName("input")[0];
-        var address = coverLis[8].getElementsByTagName("input")[0];
-        var styleOne = coverLis[9].getElementsByTagName("input")[0];
-        var styleTwo = coverLis[10].getElementsByTagName("input")[0];
-        var img1 = coverLis[11].getElementsByTagName("img");
-        var img2 = coverLis[12].getElementsByTagName("img");
-        if (title.value == "") {
-            alert("请输入你需要新增的商品名");
-        } else if (oPrice.value == "") {
-            alert("请输入商品原价");
-        } else if (nPrice.value == "") {
-            alert("请输入打折价");
-        } else if (isPrice.value == "") {
-            alert("请输入当前商品是否打折标识（0为不打折，1为打折）");
-        } else if (address.value == "") {
-            alert("请输入商品发货地");
-        } else if (styleOne.value == "") {
-            alert("请输入商品分类1");
-        } else if (styleTwo.value == "") {
-            alert("请输入商品分类2");
-        } else if (img1[0].src = "../img/backManage/upload.jpg") {
-            alert("请上传你的商品图片1");
-        } else if (img1[1].src = "../img/backManage/upload.jpg") {
-            alert("请上传你的商品图片2");
-        } else if (img1[2].src = "../img/backManage/upload.jpg") {
-            alert("请上传你的商品图片3");
-        } else if (img2[0].src = "../img/backManage/upload.jpg") {
-            alert("请上传你的商品图片4");
-        } else if (img2[1].src = "../img/backManage/upload.jpg") {
-            alert("请上传你的商品图片5");
-        } else {
-            //调用接口
-            console.log("保存分类：" + status);
-            console.log("保存编号：" + id);
-            console.log("分类：" + classify.innerText);
-            console.log("标题：" + title.value);
-            console.log("原价：" + oPrice.value);
-            console.log("现价：" + nPrice.value);
-            console.log("打折标识：" + isPrice.value);
-            console.log("地址：" + address.value);
-            console.log("分类1：" + styleOne.value);
-            console.log("分类2：" + styleTwo.value);
-            $.ajax({
-                url: 'productAction_recommendProduct.action',//页面一进来的接口
-                type: 'post',//方法
-                cache: false,//是否缓存
-                dataType: 'json',//返回值的类型
-                data: {
-                    "status": status,
-                    "id": id,
-                    "classify": classify.innerText,
-                    "title": title.value,
-                    "oPrice": oPrice.value,
-                    "nPrice": nPrice.value,
-                    "isPrice": isPrice.value,
-                    "address": address.value,
-                    "styleOne": styleOne.value,
-                    "styleTwo": styleTwo.value
-                },
-                success: function (getModComResult) {
-                    if (getModComResult.code == "1" || getModComResult.code == 1) {
-                        shade.className = "dn";
-                        document.getElementsByTagName("body")[0].style.overflow = "auto";
-                    } else {
-                        alert(getModComResult.msg);
-                    }
-                },
-                error: function () {
-                    if (getModComResult.code == "1" || getModComResult.code == 1) {
-                        shade.className = "dn";
-                        document.getElementsByTagName("body")[0].style.overflow = "auto";
-                    } else {
-                        alert(getModComResult.msg);
-                    }
-                }
-            });
-        }
-    }
+    // 点击新增按钮
+    // save.onclick = function () {
+    // var coverLis = document.getElementById("cover").getElementsByTagName("li");
+    // var classify = coverLis[0].getElementsByTagName("b")[0];
+    // var title = coverLis[4].getElementsByTagName("input")[0];
+    // var oPrice = coverLis[5].getElementsByTagName("input")[0];
+    // var nPrice = coverLis[6].getElementsByTagName("input")[0];
+    // var isPrice = coverLis[7].getElementsByTagName("input")[0];
+    // var address = coverLis[8].getElementsByTagName("input")[0];
+    // var styleOne = coverLis[9].getElementsByTagName("input")[0];
+    // var styleTwo = coverLis[10].getElementsByTagName("input")[0];
+    // var img1 = coverLis[11].getElementsByTagName("img");
+    // var img2 = coverLis[12].getElementsByTagName("img");
+    // if (title.value == "") {
+    //     alert("请输入你需要新增的商品名");
+    // } else if (oPrice.value == "") {
+    //     alert("请输入商品原价");
+    // } else if (nPrice.value == "") {
+    //     alert("请输入打折价");
+    // } else if (isPrice.value == "") {
+    //     alert("请输入当前商品是否打折标识（0为不打折，1为打折）");
+    // } else if (address.value == "") {
+    //     alert("请输入商品发货地");
+    // } else if (styleOne.value == "") {
+    //     alert("请输入商品分类1");
+    // } else if (styleTwo.value == "") {
+    //     alert("请输入商品分类2");
+    // } else if (img1[0].src = "../img/backManage/upload.png") {
+    //     alert("请上传你的商品图片1");
+    // } else if (img1[1].src = "../img/backManage/upload.png") {
+    //     alert("请上传你的商品图片2");
+    // } else if (img1[2].src = "../img/backManage/upload.png") {
+    //     alert("请上传你的商品图片3");
+    // } else if (img2[0].src = "../img/backManage/upload.png") {
+    //     alert("请上传你的商品图片4");
+    // } else if (img2[1].src = "../img/backManage/upload.png") {
+    //     alert("请上传你的商品图片5");
+    // } else {
+    //     //调用接口
+    //     console.log("保存分类：" + status);
+    //     console.log("保存编号：" + id);
+    //     console.log("分类：" + classify.innerText);
+    //     console.log("标题：" + title.value);
+    //     console.log("原价：" + oPrice.value);
+    //     console.log("现价：" + nPrice.value);
+    //     console.log("打折标识：" + isPrice.value);
+    //     console.log("地址：" + address.value);
+    //     console.log("分类1：" + styleOne.value);
+    //     console.log("分类2：" + styleTwo.value);
+    //     $.ajax({
+    //         url: 'productAction_recommendProduct.action',//页面一进来的接口
+    //         type: 'post',//方法
+    //         cache: false,//是否缓存
+    //         dataType: 'json',//返回值的类型
+    //         data: {
+    //             "status": status,
+    //             "id": id,
+    //             "classify": classify.innerText,
+    //             "title": title.value,
+    //             "oPrice": oPrice.value,
+    //             "nPrice": nPrice.value,
+    //             "isPrice": isPrice.value,
+    //             "address": address.value,
+    //             "styleOne": styleOne.value,
+    //             "styleTwo": styleTwo.value
+    //         },
+    //         success: function (getModComResult) {
+    //             if (getModComResult.code == "1" || getModComResult.code == 1) {
+    //                 shade.className = "dn";
+    //                 document.getElementsByTagName("body")[0].style.overflow = "auto";
+    //             } else {
+    //                 alert(getModComResult.msg);
+    //             }
+    //         },
+    //         error: function () {
+    //             if (getModComResult.code == "1" || getModComResult.code == 1) {
+    //                 shade.className = "dn";
+    //                 document.getElementsByTagName("body")[0].style.overflow = "auto";
+    //             } else {
+    //                 alert(getModComResult.msg);
+    //             }
+    //         }
+    //     });
+    // }
+    // }
 }
 
+$("#form1").ajaxForm(function (data) {
+    console.log(data);
+    console.log("str:" + JSON.stringify(data));
+    addComInfo(src1, src2, src3, src4, src5);
+});
 
+function addComInfo(src1, src2, src3, src4, src5) {
+    var coverLis = document.getElementById("cover").getElementsByTagName("li");
+    var classify = coverLis[0].getElementsByTagName("b")[0];
+    var title = coverLis[4].getElementsByTagName("input")[0];
+    var oPrice = coverLis[5].getElementsByTagName("input")[0];
+    var nPrice = coverLis[6].getElementsByTagName("input")[0];
+    var isPrice = coverLis[7].getElementsByTagName("input")[0];
+    var address = coverLis[8].getElementsByTagName("input")[0];
+    var styleOne = coverLis[9].getElementsByTagName("input")[0];
+    var styleTwo = coverLis[10].getElementsByTagName("input")[0];
+    var img1 = coverLis[11].getElementsByTagName("img");
+    var img2 = coverLis[12].getElementsByTagName("img");
+    if (title.value == "") {
+        alert("请输入你需要新增的商品名");
+    } else if (oPrice.value == "") {
+        alert("请输入商品原价");
+    } else if (nPrice.value == "") {
+        alert("请输入打折价");
+    } else if (isPrice.value == "") {
+        alert("请输入当前商品是否打折标识（0为不打折，1为打折）");
+    } else if (address.value == "") {
+        alert("请输入商品发货地");
+    } else if (styleOne.value == "") {
+        alert("请输入商品分类1");
+    } else if (styleTwo.value == "") {
+        alert("请输入商品分类2");
+    } else if (img1[0].src = "../img/backManage/upload.png") {
+        alert("请上传你的商品图片1");
+    } else if (img1[1].src = "../img/backManage/upload.png") {
+        alert("请上传你的商品图片2");
+    } else if (img1[2].src = "../img/backManage/upload.png") {
+        alert("请上传你的商品图片3");
+    } else if (img2[0].src = "../img/backManage/upload.png") {
+        alert("请上传你的商品图片4");
+    } else if (img2[1].src = "../img/backManage/upload.png") {
+        alert("请上传你的商品图片5");
+    } else {
+        //调用接口
+        console.log("保存分类：" + status);
+        console.log("保存编号：" + id);
+        console.log("分类：" + classify.innerText);
+        console.log("标题：" + title.value);
+        console.log("原价：" + oPrice.value);
+        console.log("现价：" + nPrice.value);
+        console.log("打折标识：" + isPrice.value);
+        console.log("地址：" + address.value);
+        console.log("分类1：" + styleOne.value);
+        console.log("分类2：" + styleTwo.value);
+        $.ajax({
+            url: 'productAction_recommendProduct.action',//页面一进来的接口
+            type: 'post',//方法
+            cache: false,//是否缓存
+            dataType: 'json',//返回值的类型
+            data: {
+                "status": status,
+                "id": id,
+                "classify": classify.innerText,
+                "title": title.value,
+                "oPrice": oPrice.value,
+                "nPrice": nPrice.value,
+                "isPrice": isPrice.value,
+                "address": address.value,
+                "styleOne": styleOne.value,
+                "styleTwo": styleTwo.value,
+                "img1": src1,
+                "img1": src2,
+                "img1": src3,
+                "img1": src4,
+                "img1": src5
+            },
+            success: function (getModComResult) {
+                if (getModComResult.code == "1" || getModComResult.code == 1) {
+                    shade.className = "dn";
+                    document.getElementsByTagName("body")[0].style.overflow = "auto";
+                } else {
+                    alert(getModComResult.msg);
+                }
+            },
+            error: function () {
+                if (getModComResult.code == "1" || getModComResult.code == 1) {
+                    shade.className = "dn";
+                    document.getElementsByTagName("body")[0].style.overflow = "auto";
+                } else {
+                    alert(getModComResult.msg);
+                }
+            }
+        });
+    }
+}
 
 function reset() {
     selUl2.className = "dn";
@@ -709,14 +807,25 @@ function reset() {
     var styleTwo = coverLis[10].getElementsByTagName("input")[0];
     styleTwo.value = '';
     var img1 = coverLis[11].getElementsByTagName("img");
-    img1[0].src = '../img/backManage/upload.jpg';
-    img1[1].src = '../img/backManage/upload.jpg';
-    img1[2].src = '../img/backManage/upload.jpg';
+    img1[0].src = '../img/backManage/upload.png';
+    img1[1].src = '../img/backManage/upload.png';
+    img1[2].src = '../img/backManage/upload.png';
     var img2 = coverLis[12].getElementsByTagName("img");
-    img2[0].src = '../img/backManage/upload.jpg';
-    img2[1].src = '../img/backManage/upload.jpg';
+    img2[0].src = '../img/backManage/upload.png';
+    img2[1].src = '../img/backManage/upload.png';
+}
+var coverLis = document.getElementById("cover").getElementsByTagName("li");
+var img1 = coverLis[11].getElementsByTagName("img");
+var imgBtn1 = coverLis[11].getElementsByTagName("p");
+var imgUpload1 = coverLis[11].getElementsByTagName("input");
+
+for (var i = 0; i < img1.length; i++) {
+    imgUpload1[i].onchange = uploadImgs(imgUpload1[i], img1[i]);
 }
 
+var img2 = coverLis[12].getElementsByTagName("img");
+var imgBtn2 = coverLis[12].getElementsByTagName("p");
+var imgUpload2 = coverLis[12].getElementsByTagName("input");
 
 
 //上传图片
