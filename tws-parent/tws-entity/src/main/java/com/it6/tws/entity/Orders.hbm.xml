@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.it6.tws.entity.Orders" table="orders">
+        <id name="oid" type="java.lang.String">
+            <column name="oid"/>
+            <generator class="assigned" />
+        </id>
+        <property name="address" type="java.lang.String">
+            <column name="address"/>
+        </property>
+        <property name="pconsignee" type="java.lang.String">
+            <column name="pconsignee"/>
+        </property>
+        <property name="telephone" type="java.lang.String">
+            <column name="telephone"/>
+        </property>
+        <property name="uid">
+            <column name="uid"/>
+        </property>
+        
+
+        <property name="total" type="java.lang.Double">
+            <column name="total"/>
+        </property>
+      
+      
+    </class>
+</hibernate-mapping>

@@ -8,4 +8,8 @@ public interface IUserService {
 
 	public String register(User user);
 
+	public User fingUserByUid(String uid);
+
+	public void updateAddress(User user);
+
 }
