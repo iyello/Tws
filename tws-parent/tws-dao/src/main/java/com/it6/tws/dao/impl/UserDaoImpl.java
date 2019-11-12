@@ -33,4 +33,21 @@ public class UserDaoImpl extends BaseDaoImpl<User> implements IUserDao {
 		}
 		return str;
 	}
+
+	@Override
+	public User fingUserByUid(String uid) {
+		String hql = "FROM User u WHERE u.uid = ?";
+		List<User> list = (List<User>) this.getHibernateTemplate().find(hql, uid);
+		if(list != null && list.size() > 0){
+			return list.get(0);
+		}
+		return null;
+	}
+
+
+	@Override
+	public void updateAddress(User user) {
+		// TODO Auto-generated method stub
+		this.save(user);
+	}
 }

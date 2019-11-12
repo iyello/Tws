@@ -24,7 +24,18 @@ public class UserServiceImpl implements IUserService{
 	@Override
 	public String register(User user) {
 		// TODO Auto-generated method stub
-		String password = MD5Utils.md5(user.getPassword());
+		//String password = MD5Utils.md5(user.getPassword());
 		return userDao.saveUser(user);
+	}
+	@Override
+	public User fingUserByUid(String uid) {
+		// TODO Auto-generated method stub
+		return userDao.fingUserByUid(uid);
+	}
+
+	@Override
+	public void updateAddress(User user) {
+		// TODO Auto-generated method stub
+		userDao.updateAddress(user);
 	}
 }

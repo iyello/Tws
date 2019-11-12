@@ -9,4 +9,9 @@ public interface IUserDao extends IBaseDao<User> {
 
 	public String saveUser(User user);
 
+	public User fingUserByUid(String uid);
+
+
+	public void updateAddress(User user);
+
 }
