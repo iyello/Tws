@@ -47,6 +47,7 @@ public class AdminOrderDaoImpl extends BaseDaoImpl<OrderItem> implements IAdminO
 		DetachedCriteria detached=DetachedCriteria.forClass(OrderItem.class);
 		
 		List<OrderItem> list= (List<OrderItem>) this.getHibernateTemplate().findByCriteria(detached,start,pageSize);
+		
 		if(list!=null&&list.size()>0)
 			return list;
 		else return null;
